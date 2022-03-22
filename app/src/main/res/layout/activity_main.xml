@@ -19,8 +19,32 @@
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moto_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/moto"
+        android:layout_margin="@dimen/margin_standard"
+        app:layout_constraintDimensionRatio="1:1"
+        android:tintMode="multiply"
+        app:tint="@color/azure"
+        android:contentDescription="@string/simple_string"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_1_string"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/moto_image" />
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
