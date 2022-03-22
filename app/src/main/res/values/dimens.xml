@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="height_bar">70dp</dimen>
+    <dimen name="height_top_bar">130dp</dimen>
+    <dimen name="height_bottom_bar">70dp</dimen>
     <dimen name="margin_standard">40dp</dimen>
     <dimen name="margin_mini">15dp</dimen>
     <dimen name="text_size_for_menu_buttons">16sp</dimen>
