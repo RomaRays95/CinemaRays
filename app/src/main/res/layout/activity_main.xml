@@ -35,12 +35,15 @@
         android:contentDescription="@string/simple_string"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:text="@string/button_1_string"
         android:textSize="30sp"
+        android:textColor="@color/black"
+        android:background="@drawable/ripple_test"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
