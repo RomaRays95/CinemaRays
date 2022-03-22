@@ -4,62 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_20"
     tools:context=".MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/margin_standard"
-        app:cardBackgroundColor="@color/blue"
-        app:cardCornerRadius="40dp"
-        app:cardElevation="15dp"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        tools:layout_editor_absoluteX="40dp">
-
-        <ImageView
-            android:id="@+id/moto_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/simple_string"
-            android:src="@drawable/moto"
-            android:tintMode="multiply"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-            app:tint="@color/azure" />
-    </androidx.cardview.widget.CardView>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="@dimen/margin_standard"-->
+<!--        app:cardBackgroundColor="@color/blue"-->
+<!--        app:cardCornerRadius="40dp"-->
+<!--        app:cardElevation="15dp"-->
+<!--        app:layout_constraintDimensionRatio="1:1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/frameLayout"-->
+<!--        tools:layout_editor_absoluteX="40dp">-->
+<!--    </androidx.cardview.widget.CardView>-->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_mini"
         android:layout_marginHorizontal="@dimen/margin_standard"
         android:layout_marginVertical="@dimen/margin_standard"
         app:layout_constraintHeight_default="spread"
         app:layout_constraintWidth_default="spread"
-        android:background="@color/azure"
+        android:background="@drawable/background_of_menu"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_test"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini"
+            android:text="@string/button_1_string"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/text_size_for_menu_buttons" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_test"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini"
+            android:text="@string/button_2_string"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/text_size_for_menu_buttons" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_test"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini"
+            android:text="@string/button_3_string"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/text_size_for_menu_buttons" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_test"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini"
+            android:text="@string/button_4_string"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/text_size_for_menu_buttons" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_test"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini"
+            android:text="@string/button_5_string"
+            android:textColor="@color/grey_20"
+            android:textSize="@dimen/text_size_for_menu_buttons" />
     </LinearLayout>
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ripple_test"
-        android:padding="10dp"
-        android:text="@string/button_1_string"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
@@ -72,6 +110,18 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bar"
         android:background="@color/red"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/moto_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/simple_string"
+            android:src="@drawable/moto"
+            android:tintMode="multiply"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:tint="@color/azure" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
