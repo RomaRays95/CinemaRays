@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CinemaRays</string>
+    <string name="button_1">Кнопка</string>
+    <string name="simple_string">Что-то где-то как то</string>
 </resources>
