@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="height_top_bar">130dp</dimen>
+    <dimen name="height_top_bar">140dp</dimen>
     <dimen name="height_bottom_bar">70dp</dimen>
     <dimen name="margin_standard">40dp</dimen>
     <dimen name="margin_mini">15dp</dimen>
