@@ -15,7 +15,7 @@
         android:layout_marginVertical="@dimen/margin_standard"
         android:background="@drawable/background_of_menu"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/margin_mini"
+        android:paddingBottom="@dimen/margin_mini_15"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="spread"
@@ -28,10 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini"
-            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini_15"
+            android:layout_marginTop="@dimen/margin_mini_15"
             android:background="@drawable/ripple_test"
-            android:padding="10dp"
             android:text="@string/button_1_string"
             android:textColor="@color/grey_20"
             android:textSize="@dimen/text_size_for_menu_buttons" />
@@ -41,10 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini"
-            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini_15"
+            android:layout_marginTop="@dimen/margin_mini_15"
             android:background="@drawable/ripple_test"
-            android:padding="10dp"
             android:text="@string/button_2_string"
             android:textColor="@color/grey_20"
             android:textSize="@dimen/text_size_for_menu_buttons" />
@@ -54,10 +52,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini"
-            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini_15"
+            android:layout_marginTop="@dimen/margin_mini_15"
             android:background="@drawable/ripple_test"
-            android:padding="10dp"
             android:text="@string/button_3_string"
             android:textColor="@color/grey_20"
             android:textSize="@dimen/text_size_for_menu_buttons" />
@@ -67,10 +64,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini"
-            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini_15"
+            android:layout_marginTop="@dimen/margin_mini_15"
             android:background="@drawable/ripple_test"
-            android:padding="10dp"
             android:text="@string/button_4_string"
             android:textColor="@color/grey_20"
             android:textSize="@dimen/text_size_for_menu_buttons" />
@@ -80,10 +76,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini"
-            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginHorizontal="@dimen/margin_mini_15"
+            android:layout_marginTop="@dimen/margin_mini_15"
             android:background="@drawable/ripple_test"
-            android:padding="10dp"
             android:text="@string/button_5_string"
             android:textColor="@color/grey_20"
             android:textSize="@dimen/text_size_for_menu_buttons" />
@@ -92,153 +87,134 @@
     <HorizontalScrollView
         android:id="@+id/top_frame"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_top_bar"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini_10"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image1"
-                    android:layout_width="95dp"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/avatar" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image2"
-                    android:layout_width="95dp"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/inception" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image3"
-                    android:layout_width="@dimen/height_top_bar"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
-                    android:src="@drawable/kruala" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cruella" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image4"
-                    android:layout_width="@dimen/height_top_bar"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/matrix" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image5"
-                    android:layout_width="@dimen/height_top_bar"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
-                    android:src="@drawable/pirats" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pirates" />
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
+                android:layout_marginStart="@dimen/margin_mini_10"
+                android:layout_marginEnd="@dimen/margin_mini_10"
+                app:cardCornerRadius="@dimen/corners_mini"
+                app:cardElevation="@dimen/card_elevation">
+
                 <ImageView
                     android:id="@+id/film_image6"
-                    android:layout_width="@dimen/height_top_bar"
+                    android:layout_width="@dimen/weight_posters_top_bar"
                     android:layout_height="@dimen/height_top_bar"
                     android:contentDescription="@string/simple_string"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/walking_castle" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </HorizontalScrollView>
 
-    <HorizontalScrollView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_about_posters"
+        android:textColor="@color/grey_20"
+        android:autoLink="web"
+        android:linksClickable="true"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_frame" />
+
+    <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_top_bar"
-
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
-                <ImageView
-                    android:id="@+id/moto_imag1e"
-                    android:layout_width="@dimen/height_top_bar"
-                    android:layout_height="@dimen/height_top_bar"
-                    android:contentDescription="@string/simple_string"
-                    android:src="@drawable/moto" />
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
-                <ImageView
-                    android:id="@+id/moto_imag31e"
-                    android:layout_width="@dimen/height_top_bar"
-                    android:layout_height="@dimen/height_top_bar"
-                    android:contentDescription="@string/simple_string"
-                    android:src="@drawable/moto" />
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_marginStart="@dimen/margin_mini"
-                app:cardElevation="10dp">
-                <ImageView
-                    android:id="@+id/moto_im2ag1e"
-                    android:layout_width="@dimen/height_top_bar"
-                    android:layout_height="@dimen/height_top_bar"
-                    android:contentDescription="@string/simple_string"
-                    android:src="@drawable/moto" />
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
+        android:layout_height="@dimen/height_bottom_bar"
+        android:background="@color/dark_10"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
