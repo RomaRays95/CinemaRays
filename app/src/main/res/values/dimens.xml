@@ -8,5 +8,5 @@
     <dimen name="margin_mini_10">10dp</dimen>
     <dimen name="corners_mini">10dp</dimen>
     <dimen name="card_elevation">10dp</dimen>
-    <dimen name="text_size_for_menu_buttons">16sp</dimen>
+    <dimen name="text_size_for_menu_buttons">15sp</dimen>
 </resources>
