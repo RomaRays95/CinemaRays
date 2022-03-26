@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CinemaRays</string>
+    <string name="button_1_string">Меню</string>
+    <string name="button_2_string">Избранное</string>
+    <string name="button_3_string">Посмотреть позже</string>
+    <string name="button_4_string">Подборки</string>
+    <string name="button_5_string">Настройки</string>
+    <string name="simple_string">Что-то где-то как то</string>
+    <string name="message_about_posters">Материалы представлены с kinoafisha.info</string>
 </resources>
