@@ -193,7 +193,6 @@
                     android:src="@drawable/walking_castle" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
-
     </HorizontalScrollView>
 
     <TextView
@@ -215,6 +214,5 @@
         android:layout_height="@dimen/height_bottom_bar"
         android:background="@color/dark_10"
         app:layout_constraintBottom_toBottomOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
