@@ -122,6 +122,7 @@
         android:layout_marginTop="@dimen/margin_mini_15"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
