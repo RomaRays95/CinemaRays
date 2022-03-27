@@ -19,7 +19,7 @@
             app:title="Skillfactory"
             app:titleTextColor="@android:color/white"
             app:menu="@menu/top_app_bar"
-            app:navigationIcon="@drawable/ic_round_menu_24" />
+            app:navigationIcon="@drawable/ic_left_menu" />
 
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout

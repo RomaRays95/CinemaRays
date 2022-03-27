@@ -25,5 +25,25 @@ class MainActivity : AppCompatActivity() {
         button_5.setOnClickListener {
             Toast.makeText(this, "Task 5", Toast.LENGTH_SHORT).show()
         }
+        topAppBar.setNavigationOnClickListener {
+            Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT).show()
+        }
+        topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.fav -> {
+                    Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.search -> {
+                    Toast.makeText(this, "Поиск", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.more -> {
+                    Toast.makeText(this, "Еще", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
+        }
     }
 }
