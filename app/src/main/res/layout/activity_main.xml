@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_20"
+    android:background="?attr/colorOnSecondary"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
@@ -16,12 +17,13 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Skillfactory"
-            app:titleTextColor="@android:color/white"
             app:menu="@menu/top_app_bar"
-            app:navigationIcon="@drawable/ic_left_menu" />
+            app:navigationIcon="@drawable/ic_left_menu"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
@@ -40,63 +42,28 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini_15"
-            android:layout_marginTop="@dimen/margin_mini_15"
-            android:background="@drawable/ripple_test"
-            android:text="@string/button_1_string"
-            android:textColor="@color/grey_20"
-            android:textSize="@dimen/text_size_for_menu_buttons" />
+            style="@style/buttonPort"
+            android:text="@string/button_1_string" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini_15"
-            android:layout_marginTop="@dimen/margin_mini_15"
-            android:background="@drawable/ripple_test"
-            android:text="@string/button_2_string"
-            android:textColor="@color/grey_20"
-            android:textSize="@dimen/text_size_for_menu_buttons" />
+            style="@style/buttonPort"
+            android:text="@string/button_2_string" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini_15"
-            android:layout_marginTop="@dimen/margin_mini_15"
-            android:background="@drawable/ripple_test"
-            android:text="@string/button_3_string"
-            android:textColor="@color/grey_20"
-            android:textSize="@dimen/text_size_for_menu_buttons" />
+            style="@style/buttonPort"
+            android:text="@string/button_3_string" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini_15"
-            android:layout_marginTop="@dimen/margin_mini_15"
-            android:background="@drawable/ripple_test"
-            android:text="@string/button_4_string"
-            android:textColor="@color/grey_20"
-            android:textSize="@dimen/text_size_for_menu_buttons" />
+            style="@style/buttonPort"
+            android:text="@string/button_4_string" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="@dimen/margin_mini_15"
-            android:layout_marginTop="@dimen/margin_mini_15"
-            android:background="@drawable/ripple_test"
-            android:text="@string/button_5_string"
-            android:textColor="@color/grey_20"
-            android:textSize="@dimen/text_size_for_menu_buttons" />
+            style="@style/buttonPort"
+            android:text="@string/button_5_string" />
     </LinearLayout>
 
     <HorizontalScrollView
@@ -105,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_mini_10"
         android:scrollbars="none"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -214,21 +181,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/message_about_posters"
-        android:textColor="@color/grey_20"
         android:autoLink="web"
         android:linksClickable="true"
-        app:layout_constraintVertical_bias="0.2"
+        android:text="@string/message_about_posters"
+        android:textColor="?attr/myTextColour01"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_frame" />
+        app:layout_constraintTop_toBottomOf="@+id/top_frame"
+        app:layout_constraintVertical_bias="0.2" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"
-        android:background="@color/dark_10"
+        android:background="?attr/colorSecondaryVariant"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@
     <color name="red">#FF0000</color>
     <color name="blue">#0041FF</color>
     <color name="azure">#00FFFF</color>
+    <color name="azureDark">#01A3A3</color>
     <color name="yellow">#FFFB00</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
