@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CinemaRays</string>
-    <string name="button_1_string">Меню</string>
+    <string name="button_1_string">Поиск</string>
     <string name="button_2_string">Избранное</string>
     <string name="button_3_string">Посмотреть позже</string>
     <string name="button_4_string">Подборки</string>

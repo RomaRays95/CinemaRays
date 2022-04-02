@@ -29,17 +29,29 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT).show()
         }
         topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {R.id.selections -> {
+                    Toast.makeText(this, "selections", Toast.LENGTH_SHORT).show()
+                    true
+                }R.id.settings -> {
+                    Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
+        }
+        bottom_navigation.setOnNavigationItemSelectedListener {
+
             when (it.itemId) {
-                R.id.fav -> {
+                R.id.favorites -> {
                     Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
                     true
                 }
-                R.id.search -> {
-                    Toast.makeText(this, "Поиск", Toast.LENGTH_SHORT).show()
+                R.id.watch_later -> {
+                    Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
                     true
                 }
-                R.id.more -> {
-                    Toast.makeText(this, "Еще", Toast.LENGTH_SHORT).show()
+                R.id.selections -> {
+                    Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false
