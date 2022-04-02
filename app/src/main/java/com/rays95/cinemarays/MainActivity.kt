@@ -9,19 +9,24 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initListeners()
+    }
 
+    private fun initListeners() {
         topAppBar.setNavigationOnClickListener {
-            Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT)
+                .show()
         }
         topAppBar.setOnMenuItemClickListener {
-            when (it.itemId) {R.id.settings -> {
+            when (it.itemId) {
+                R.id.settings -> {
                     Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false
             }
         }
-        bottom_navigation.setOnNavigationItemSelectedListener {
+        bottom_navigation.setOnItemSelectedListener {
 
             when (it.itemId) {
                 R.id.favorites -> {
