@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/fav"
-        android:icon="@drawable/ic_faw_icon"
-        android:title="@string/button_2_string"
-        app:showAsAction="ifRoom" />
 
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search_icon"
-        android:title="@string/button_1_string"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/see_later"
-        android:title="@string/button_3_string"
-        app:showAsAction="withText" />
-    <item
-        android:id="@+id/selections"
-        android:title="@string/button_4_string"
-        app:showAsAction="withText" />
     <item
         android:id="@+id/settings"
         android:title="@string/button_5_string"
+        android:icon="@drawable/ic_baseline_settings"
         app:showAsAction="ifRoom" />
 </menu>

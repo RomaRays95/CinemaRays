@@ -10,29 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_1.setOnClickListener {
-            Toast.makeText(this, "Task 1", Toast.LENGTH_SHORT).show()
-        }
-        button_2.setOnClickListener {
-            Toast.makeText(this, "Task 2", Toast.LENGTH_SHORT).show()
-        }
-        button_3.setOnClickListener {
-            Toast.makeText(this, "Task 3", Toast.LENGTH_SHORT).show()
-        }
-        button_4.setOnClickListener {
-            Toast.makeText(this, "Task 4", Toast.LENGTH_SHORT).show()
-        }
-        button_5.setOnClickListener {
-            Toast.makeText(this, "Task 5", Toast.LENGTH_SHORT).show()
-        }
         topAppBar.setNavigationOnClickListener {
             Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT).show()
         }
         topAppBar.setOnMenuItemClickListener {
-            when (it.itemId) {R.id.selections -> {
-                    Toast.makeText(this, "selections", Toast.LENGTH_SHORT).show()
-                    true
-                }R.id.settings -> {
+            when (it.itemId) {R.id.settings -> {
                     Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show()
                     true
                 }
