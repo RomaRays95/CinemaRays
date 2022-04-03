@@ -5,6 +5,7 @@
     <color name="red">#FF0000</color>
     <color name="blue">#0041FF</color>
     <color name="azure">#00FFFF</color>
+    <color name="azureDark">#01A3A3</color>
     <color name="yellow">#FFFB00</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -12,8 +13,9 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="dark_10">#232323</color>
-    <color name="dark_09">#1C1C1C</color>
+    <color name="dark_09">#131313</color>
     <color name="dark_20">#2A2B2B</color>
     <color name="grey_20">#868888</color>
+    <color name="grey_30">#B0B5B5</color>
 
 </resources>

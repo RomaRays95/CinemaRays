@@ -9,21 +9,40 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initListeners()
+    }
 
-        button_1.setOnClickListener {
-            Toast.makeText(this, "Task 1", Toast.LENGTH_SHORT).show()
+    private fun initListeners() {
+        topAppBar.setNavigationOnClickListener {
+            Toast.makeText(this, getString(R.string.will_be_navigation), Toast.LENGTH_SHORT)
+                .show()
         }
-        button_2.setOnClickListener {
-            Toast.makeText(this, "Task 2", Toast.LENGTH_SHORT).show()
+        topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.settings -> {
+                    Toast.makeText(this, getString(R.string.button_5_string), Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
         }
-        button_3.setOnClickListener {
-            Toast.makeText(this, "Task 3", Toast.LENGTH_SHORT).show()
-        }
-        button_4.setOnClickListener {
-            Toast.makeText(this, "Task 4", Toast.LENGTH_SHORT).show()
-        }
-        button_5.setOnClickListener {
-            Toast.makeText(this, "Task 5", Toast.LENGTH_SHORT).show()
+        bottom_navigation.setOnItemSelectedListener {
+
+            when (it.itemId) {
+                R.id.favorites -> {
+                    Toast.makeText(this, getString(R.string.button_2_string), Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.watch_later -> {
+                    Toast.makeText(this, getString(R.string.button_3_string), Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.selections -> {
+                    Toast.makeText(this, getString(R.string.button_4_string), Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
         }
     }
 }
