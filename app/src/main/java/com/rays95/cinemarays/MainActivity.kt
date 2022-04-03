@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun initListeners() {
         topAppBar.setNavigationOnClickListener {
-            Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT)
+            Toast.makeText(this, getString(R.string.will_be_navigation), Toast.LENGTH_SHORT)
                 .show()
         }
         topAppBar.setOnMenuItemClickListener {
             when (it.itemId) {
                 R.id.settings -> {
-                    Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.button_5_string), Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false
@@ -30,15 +30,15 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 R.id.favorites -> {
-                    Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.button_2_string), Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.watch_later -> {
-                    Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.button_3_string), Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.selections -> {
-                    Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.button_4_string), Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false
