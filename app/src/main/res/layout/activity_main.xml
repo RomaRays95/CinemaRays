@@ -36,6 +36,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_anim_first"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
