@@ -146,6 +146,7 @@
         android:columnCount="2"
         android:orientation="horizontal"
         android:useDefaultMargins="true"
+        android:layoutAnimation="@anim/layout_new_posters_anim"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -153,6 +154,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/poster_11"
             android:layout_width="@dimen/weight_new_posters"
+            android:clickable="true"
+            android:stateListAnimator="@animator/selector_posters"
             android:layout_height="@dimen/height_new_posters"
             app:cardCornerRadius="@dimen/corners_midi">
             <ImageView
@@ -167,6 +170,8 @@
             android:id="@+id/poster_12"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
+            android:clickable="true"
+            android:stateListAnimator="@animator/selector_posters"
             app:cardCornerRadius="@dimen/corners_midi">
             <ImageView
                 android:layout_width="match_parent"
@@ -180,6 +185,8 @@
             android:id="@+id/poster_13"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
+            android:clickable="true"
+            android:stateListAnimator="@animator/selector_posters"
             app:cardCornerRadius="@dimen/corners_midi">
             <ImageView
                 android:layout_width="match_parent"
@@ -193,6 +200,8 @@
             android:id="@+id/poster_14"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
+            android:clickable="true"
+            android:stateListAnimator="@animator/selector_posters"
             app:cardCornerRadius="@dimen/corners_midi">
             <ImageView
                 android:layout_width="match_parent"
