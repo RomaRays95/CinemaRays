@@ -2,6 +2,6 @@
 <layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
     android:animation="@anim/first_animation"
     android:animationOrder="normal"
-    android:delay="0.4">
+    android:delay="0.5">
 
 </layoutAnimation>

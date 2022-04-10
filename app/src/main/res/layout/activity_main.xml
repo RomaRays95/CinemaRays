@@ -127,16 +127,82 @@
     </HorizontalScrollView>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini_10"
         android:autoLink="web"
         android:linksClickable="true"
         android:text="@string/message_about_posters"
         android:textColor="?attr/myTextColour01"
-        android:layout_marginTop="@dimen/margin_mini_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_frame" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poster_11"
+            android:layout_width="@dimen/weight_new_posters"
+            android:layout_height="@dimen/height_new_posters"
+            app:cardCornerRadius="@dimen/corners_midi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/film_image11"
+                android:src="@drawable/avatar"
+                android:contentDescription="@string/simple_string"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poster_12"
+            android:layout_width="@dimen/weight_new_posters"
+            android:layout_height="@dimen/height_new_posters"
+            app:cardCornerRadius="@dimen/corners_midi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/film_image12"
+                android:src="@drawable/matrix"
+                android:contentDescription="@string/simple_string"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poster_13"
+            android:layout_width="@dimen/weight_new_posters"
+            android:layout_height="@dimen/height_new_posters"
+            app:cardCornerRadius="@dimen/corners_midi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/film_image13"
+                android:src="@drawable/pirates"
+                android:contentDescription="@string/simple_string"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poster_14"
+            android:layout_width="@dimen/weight_new_posters"
+            android:layout_height="@dimen/height_new_posters"
+            app:cardCornerRadius="@dimen/corners_midi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/film_image14"
+                android:src="@drawable/walking_castle"
+                android:contentDescription="@string/simple_string"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
