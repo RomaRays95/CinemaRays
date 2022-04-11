@@ -142,7 +142,7 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:padding="@dimen/margin_mini_15"
         android:columnCount="2"
         android:orientation="horizontal"
         android:useDefaultMargins="true"
