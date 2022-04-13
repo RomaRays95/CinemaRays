@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CinemaRays</string>
-    <string name="button_1_string">Search</string>
     <string name="simple_string">Bla Bla Bla Bla Bla Bla</string>
     <string name="button_2_string">Favourites</string>
     <string name="button_3_string">See later</string>

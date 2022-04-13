@@ -47,7 +47,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image1"
                     android:src="@drawable/avatar"
                     android:contentDescription="@string/simple_string"
                     style="@style/posters_card_main" />
@@ -61,7 +60,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image2"
                     android:src="@drawable/inception"
                     android:contentDescription="@string/simple_string"
                     style="@style/posters_card_main" />
@@ -75,7 +73,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image3"
                     android:src="@drawable/cruella"
                     android:contentDescription="@string/simple_string"
                     style="@style/posters_card_main" />
@@ -89,7 +86,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image4"
                     android:src="@drawable/matrix"
                     android:contentDescription="@string/simple_string"
                     style="@style/posters_card_main" />
@@ -103,7 +99,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image5"
                     android:src="@drawable/pirates"
                     style="@style/posters_card_main"
                     android:contentDescription="@string/simple_string"/>
@@ -118,7 +113,6 @@
                 app:cardElevation="@dimen/card_elevation">
 
                 <ImageView
-                    android:id="@+id/film_image6"
                     android:src="@drawable/walking_castle"
                     android:contentDescription="@string/simple_string"
                     style="@style/posters_card_main" />
@@ -152,7 +146,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
         <androidx.cardview.widget.CardView
-            android:id="@+id/poster_11"
             android:layout_width="@dimen/weight_new_posters"
             android:clickable="true"
             android:stateListAnimator="@animator/selector_posters"
@@ -161,13 +154,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/film_image11"
                 android:src="@drawable/avatar"
                 android:contentDescription="@string/simple_string"
                 android:scaleType="centerCrop" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/poster_12"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
             android:clickable="true"
@@ -176,13 +167,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/film_image12"
                 android:src="@drawable/matrix"
                 android:contentDescription="@string/simple_string"
                 android:scaleType="centerCrop" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/poster_13"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
             android:clickable="true"
@@ -191,13 +180,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/film_image13"
                 android:src="@drawable/pirates"
                 android:contentDescription="@string/simple_string"
                 android:scaleType="centerCrop" />
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/poster_14"
             android:layout_width="@dimen/weight_new_posters"
             android:layout_height="@dimen/height_new_posters"
             android:clickable="true"
@@ -206,12 +193,20 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/film_image14"
                 android:src="@drawable/walking_castle"
                 android:contentDescription="@string/simple_string"
                 android:scaleType="centerCrop" />
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
